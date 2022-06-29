@@ -1,0 +1,246 @@
+:root{
+  --oscuro: #84817a;
+  --claro: #f7f1e3;
+}
+/* RESET */
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+.container-fluid{
+  padding:0 !important;
+}
+.row > *{
+  padding: 0;
+}
+.row{
+  margin:0 !important;
+}
+h1,h2,h3,h4{
+	margin:0 !important;
+}
+p{
+	margin:0 !important;
+}
+ul{
+  margin-bottom: 0 !important;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden !important;
+  font-family: textos !important;
+}
+/* RESET */
+
+/* FUENTES */
+@font-face {
+    font-family: textos;
+    src: url("../font/Roboto-Thin.ttf");
+}
+@font-face {
+    font-family: titulos;
+    src: url("../font/Roboto-Regular.ttf");
+}
+/* FUENTES */
+
+h1{
+  font-size: 5rem !important;
+  font-family: titulos !important;
+}
+h2{
+  font-size: 2.5rem !important;
+  font-family: titulos !important;
+}
+h3{
+  font-size: 1.5rem !important;
+  font-family: titulos !important;
+}
+h4{
+  font-size: 1rem !important;
+}
+hr{
+   margin: 1rem 0 0 0 !important;
+  width: 10% !important;
+  padding:.1% 0 !important;
+  background-color: var(--oscuro) !important;
+  opacity: 1 !important;
+  border: none !important;
+}
+
+header{
+  position: absolute !important;
+  z-index: 9999 !important;
+  width: 100% !important;
+  background-color: transparent !important;
+  color: white !important;
+}
+header .navbar{
+  background-color: transparent !important;
+}
+header .navbar .navbar-brand{
+  color: white !important;
+  font-family: titulos !important;
+}
+header .navbar .navbar-collapse{
+  flex-grow: 0 !important;
+}
+
+#cabecera{
+  background: url(../img/cabecera.jpg)no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  width: 100% !important;
+  height: 40rem !important;
+  color: white !important;
+}
+#cabecera .row{
+  height: 100% !important;
+  width: 100% !important;
+}
+
+#caracteristicas{
+  background-color: var(--oscuro) !important;
+}
+#caracteristicas .circulo{
+  border: 1px solid white !important;
+  border-radius: 20rem !important;
+  width: 35% !important;
+  height: 35% !important;
+  padding: 2.5rem !important;
+  margin: 15% 0 !important;
+}
+#caracteristicas .texto{
+  padding-bottom: 4rem !important;
+}
+#caracteristicas p{
+  padding: 5% 10% 0 10%!important;
+  color: white;
+}
+#caracteristicas2{
+  background-color: white !important;
+  padding: 5% 0 0!important;
+}
+#caracteristicas2 .titulo h2,
+#clientes .titulo h2{
+  color: var(--oscuro) !important;
+}
+#caracteristicas2 .titulo p,
+#clientes .titulo p{
+  padding: 1rem 30% 0 !important;
+}
+
+#news{
+  background: url(../img/cabecera.jpg)no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  width: 100% !important;
+  color: white !important;
+}
+#news hr{
+  background-color: white !important;
+}
+#news .titulo{
+  margin-bottom: 3rem !important;
+}
+#news form{
+  padding: 0 30% !important;
+}
+#news .form-control{
+  background-color: var(--oscuro) !important;
+  border: none !important;
+}
+#news .form-control::placeholder{
+  color: var(--claro) !important;
+}
+#news .btn{
+  background-color: var(--oscuro) !important;
+  color: var(--claro) !important;
+}
+
+#clientes .titulo{
+  margin-bottom: 3rem !important;
+}
+#clientes .cuadro{
+  padding: 10% 10% 0% 10%!important;
+}
+#clientes .cuadro img{
+  border-radius: 20rem !important;
+  width: 50% !important;
+}
+
+#marcas{
+  background-color: var(--oscuro) !important;
+}
+
+#exampleSlider {
+  position: relative;
+}
+#exampleSlider .MS-content {
+  margin: 0px 5%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#exampleSlider .MS-content .item {
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  border-right: none;
+  width: 20%;
+}
+#exampleSlider .MS-content .item img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 0 !important;
+  padding: 5% 30% !important;
+  opacity: 0.5 !important;
+}
+#exampleSlider .MS-controls button {
+  position: absolute;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  outline: 0;
+  top: 37% !important;
+  color: white !important;
+}
+#exampleSlider .MS-controls button:hover {
+  cursor: pointer;
+}
+#exampleSlider .MS-controls .MS-left {
+  left: 2% !important;
+}
+#exampleSlider .MS-controls .MS-right {
+  right: 2% !important;
+}
+
+/* MOVIL */
+@media (max-width: 380px){
+  #principal{
+    padding: 50% 0 !important;
+  }
+  #exampleSlider .MS-content .item i{
+    font-size: 4rem !important;
+  }
+  #exampleSlider .MS-content .item{
+    width: 50% !important;
+  }
+  #exampleSlider .MS-controls .MS-left {
+  left: 2% !important;
+  }
+  #exampleSlider .MS-controls .MS-right {
+    right: 2% !important;
+  }
+  #exampleSlider .MS-controls button{
+    top:  25% !important;
+  }
+}
+
