@@ -78,13 +78,13 @@ header{
   z-index: 9999 !important;
   width: 100% !important;
   background-color: transparent !important;
-  color: white !important;
+  color: black !important;
 }
 header .navbar{
   background-color: transparent !important;
 }
 header .navbar .navbar-brand{
-  color: white !important;
+  color: black !important;
   font-family: titulos !important;
 }
 header .navbar .navbar-collapse{
