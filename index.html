@@ -25,30 +25,44 @@
 			<!-- ESPACIO -->
 			<div class="col-1"></div>
 
-			<!-- CONTENEDOR -->
+			<!-- ESPACIO -->
 			<div class="col-10">
-				<nav class="navbar navbar-expand-lg ">
-					<div class="container-fluid">
-						<!-- LOGO -->
-					    <a class="navbar-brand" href="index.html">
-					    	<img src="img/logo.png" class="w-25 me-3" alt="">NeuroTec
-					    </a>
-					    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					      <span class="navbar-toggler-icon"></span>
-					    </button>
-					    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					      <div class="navbar-nav">
-					        <a class="nav-link active text-reset" aria-current="page" href="#">Home</a>
-					        <a class="nav-link text-reset" href="#">Features</a>
-					      </div>
-					    </div>
-					  </div>
-					</nav>
-			</div>
+				<nav>
+					<div class="logo">
+						<div>
+							<!-- LOGO -->
+							<a href="index.html" class="d-flex justify-content-center align-items-center">
+								<img src="img/logo.png" class="pe-3" alt="">
+								<h1 class="">NeuroTec</h1>
+							</a>
+
+							<!-- ICONO BURGUER -->
+							<span class="burger">
+								<!-- BARRAS NORMALES -->
+								<i class="fas fa-bars"></i> 
+
+								<!-- BARRAS SEGUNDA MOVIDA 
+								<i class="fa-solid fa-bars-staggered"></i>-->
+
+								<!-- BARRA CON RECUADRO 
+								<i class="fa-solid fa-chart-bar"></i> -->
+							</span>
+						</div>
+					</div>
+
+					<div class="menu">
+						<ul class="lista">
+							<li class="pe-md-3"><a href="#">Link 1 </a></li>
+							<li class="pe-md-3"><a href="#">Link 2 </a></li>
+							<li class=""><a href="#">Link 3 </a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>		
 
 			<!-- ESPACIO -->
 			<div class="col-1"></div>
-		</div>
+		</div>		
 	</header>
 
 	<main>
@@ -59,9 +73,9 @@
 
 				<!-- CONTENEDOR -->
 				<div class="col-10">
-					<div class="row">
+					<div class="row" id="cont">
 						<!-- COLUMNA 1 -->
-						<div class="col-6 d-flex flex-column justify-content-center align-items-start">
+						<div class="col-md-6 d-flex flex-column justify-content-center align-items-start texto">
 							<h1>Tecnology Brain</h1>
 
 							<p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, deleniti velit voluptate, fuga sapiente unde, eos mollitia laboriosam adipisci reprehenderit repellendus quaerat in magnam repellat itaque similique? Labore, explicabo, modi.</p>
@@ -89,7 +103,7 @@
 				<div class="col-10">
 					<div class="row">
 						<!-- ELEMENTO 1 -->
-						<div class="col-4 ">
+						<div class="col-md-4 ">
 							<div class="row d-flex justify-content-center align-items-center">
 								<!-- IMG -->
 								<div class="circulo d-flex justify-content-center align-items-center">
@@ -97,7 +111,7 @@
 								</div>
 
 								<!-- TEXTO -->
-								<div class="row d-flex justify-content-center align-items-center text-center text-white">
+								<div class="row d-flex justify-content-center align-items-center text-center text-white texto">
 									<h3>Titulo</h3>
 
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -106,7 +120,7 @@
 						</div>
 
 						<!-- ELEMENTO 2 -->
-						<div class="col-4 ">
+						<div class="col-md-4 ">
 							<div class="row d-flex justify-content-center align-items-center">
 								<!-- IMG -->
 								<div class="circulo d-flex justify-content-center align-items-center">
@@ -123,7 +137,7 @@
 						</div>
 
 						<!-- ELEMENTO 3 -->
-						<div class="col-4">
+						<div class="col-md-4">
 							<div class="row d-flex justify-content-center align-items-center">
 								<!-- IMG -->
 								<div class="circulo d-flex justify-content-center align-items-center">
@@ -131,7 +145,7 @@
 								</div>
 
 								<!-- TEXTO -->
-								<div class="row d-flex justify-content-center align-items-center text-center text-white">
+								<div class="row d-flex justify-content-center align-items-center text-center text-white texto">
 									<h3>Titulo</h3>
 
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -162,7 +176,7 @@
 
 					<div class="row">
 						<!-- ELEMENTO 1 -->
-						<div class="col-4 d-flex flex-column justify-content-center align-items-center">
+						<div class="col-4 d-flex flex-column justify-content-center align-items-center elemento">
 							<!-- RENGLON 1 -->
 							<div class="row">
 								<!-- TEXTO -->
@@ -210,12 +224,12 @@
 						</div>
 
 						<!-- ELEMENTO 2 -->
-						<div class="col-4 d-flex justify-content-center align-items-center">
-							<img src="img/touch.png" class="w-100 p-5" alt="">
+						<div class="col-md-4 d-flex justify-content-center align-items-center">
+							<img src="img/touch.png" class="w-100 px-5" alt="">
 						</div>
 
 						<!-- ELEMENTO 1 -->
-						<div class="col-4 d-flex flex-column justify-content-center align-items-center">
+						<div class="col-4 d-flex flex-column justify-content-center align-items-center elemento">
 							<!-- RENGLON 1 -->
 							<div class="row">
 								<!-- IMG -->
@@ -262,6 +276,96 @@
 							</div>
 						</div>
 					</div>
+
+					<div class="row pt-5" id="elementoM">
+						<div class="col-12">
+							<div class="accordion accordion-flush" id="accordionFlushExample">
+								<!-- ITEM 1 -->
+							  	<div class="accordion-item">
+							    	<h2 class="accordion-header" id="flush-headingOne">
+							      		<a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">TITULO
+							      		</a>
+							    	</h2>
+
+							    	<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+							      		<div class="accordion-body text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias excepturi voluptas</div>
+							    	</div>
+							  	</div>
+
+							  	<!-- ITEM 2 -->
+							  	<div class="accordion-item">
+							    	<h2 class="accordion-header" id="flush-headingOne">
+							      		<a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDos" aria-expanded="false" aria-controls="flush-collapseOne">TITULO
+							      		</a>
+							    	</h2>
+
+							    	<div id="flush-collapseDos" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+							      		<div class="accordion-body text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias excepturi voluptas</div>
+							    	</div>
+							  	</div>
+
+							  	<!-- ITEM 3 -->
+							  	<div class="accordion-item">
+							    	<h2 class="accordion-header" id="flush-headingOne">
+							      		<a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTres" aria-expanded="false" aria-controls="flush-collapseOne">TITULO
+							      		</a>
+							    	</h2>
+
+							    	<div id="flush-collapseTres" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+							      		<div class="accordion-body text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias excepturi voluptas</div>
+							    	</div>
+							  	</div>
+
+							  	<!-- ITEM 4 -->
+							  	<div class="accordion-item">
+							    	<h2 class="accordion-header" id="flush-headingOne">
+							      		<a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCuatro" aria-expanded="false" aria-controls="flush-collapseOne">TITULO
+							      		</a>
+							    	</h2>
+
+							    	<div id="flush-collapseCuatro" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+							      		<div class="accordion-body text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias excepturi voluptas</div>
+							    	</div>
+							  	</div>
+
+							  	<!-- ITEM 5 -->
+							  	<div class="accordion-item">
+							    	<h2 class="accordion-header" id="flush-headingOne">
+							      		<a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCinco" aria-expanded="false" aria-controls="flush-collapseOne">TITULO
+							      		</a>
+							    	</h2>
+
+							    	<div id="flush-collapseCinco" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+							      		<div class="accordion-body text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias excepturi voluptas</div>
+							    	</div>
+							  	</div>
+
+							  	<!-- ITEM 6 -->
+							  	<div class="accordion-item">
+							    	<h2 class="accordion-header" id="flush-headingOne">
+							      		<a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeis" aria-expanded="false" aria-controls="flush-collapseOne">TITULO
+							      		</a>
+							    	</h2>
+
+							    	<div id="flush-collapseSeis" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+							      		<div class="accordion-body text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias excepturi voluptas</div>
+							    	</div>
+							  	</div>
+
+							  	<!-- ITEM 1 -->
+							  	<div class="accordion-item">
+							    	<h2 class="accordion-header" id="flush-headingOne">
+							      		<a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">TITULO
+							      		</a>
+							    	</h2>
+
+							    	<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+							      		<div class="accordion-body text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias excepturi voluptas</div>
+							    	</div>
+							  	</div>
+							</div>
+						</div>
+					</div>				
 				</div>
 
 				<!-- ESPACIO -->
@@ -284,10 +388,10 @@
 
 					<div class="row text-center">
 						<form class="row">
-						  <div class="col-11 pe-2">
-						    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+						  <div class="col-md-11 pe-md-2">
+						    <input type="password" class="form-control" id="inputPassword2" placeholder="E-mail">
 						  </div>
-						  <div class="col-1">
+						  <div class="col-md-1">
 						    <button type="submit" class="btn">Subscribe</button>
 						  </div>
 						</form>
@@ -318,7 +422,7 @@
 					<!-- CLIENTES -->
 					<div class="row">
 						<!-- CLIENTE 1 -->
-						<div class="col-4">
+						<div class="col-md-4">
 							<div class="cuadro">
 								<!-- IMG -->
 								<div class="row d-flex justify-content-center align-items-center">
@@ -330,13 +434,13 @@
 									<h3 class="my-3">Persona</h3>
 									<h4>Profesión</h4>
 									<hr>
-									<p class="mt-3 px-5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugiat, reprehenderit atque voluptates quisquam inventore totam."</p>
+									<p class="mt-3 px-md-5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugiat, reprehenderit atque voluptates quisquam inventore totam."</p>
 								</div>
 							</div>
 						</div>
 
 						<!-- CLIENTE 2 -->
-						<div class="col-4">
+						<div class="col-md-4 my-5 my-md-0">
 							<div class="cuadro">
 								<!-- IMG -->
 								<div class="row d-flex justify-content-center align-items-center">
@@ -348,13 +452,13 @@
 									<h3 class="my-3">Persona</h3>
 									<h4>Profesión</h4>
 									<hr>
-									<p class="mt-3 px-5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugiat, reprehenderit atque voluptates quisquam inventore totam."</p>
+									<p class="mt-3 px-md-5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugiat, reprehenderit atque voluptates quisquam inventore totam."</p>
 								</div>
 							</div>
 						</div>
 
 						<!-- CLIENTE 3 -->
-						<div class="col-4">
+						<div class="col-md-4">
 							<div class="cuadro">
 								<!-- IMG -->
 								<div class="row d-flex justify-content-center align-items-center">
@@ -366,7 +470,7 @@
 									<h3 class="my-3">Persona</h3>
 									<h4>Profesión</h4>
 									<hr>
-									<p class="mt-3 px-5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugiat, reprehenderit atque voluptates quisquam inventore totam."</p>
+									<p class="mt-3 px-md-5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugiat, reprehenderit atque voluptates quisquam inventore totam."</p>
 								</div>
 							</div>
 						</div>
@@ -430,7 +534,12 @@
 		<div class="d-flex justify-content-center align-items-center py-3">
 			<h4>NeuroTec © | 2022</h4>
 		</div>
-	</footer>			
+	</footer>
+
+	<!--HOME-->
+	<div class="home">
+		<i class="fas fa-long-arrow-alt-up"></i>
+	</div>		
 	
 
 
@@ -453,5 +562,11 @@
         duration: 1000
     });
 </script>
+
+<!-- MENU -->
+<script src="js/menu.js"></script>
+
+<!-- HOME -->
+<script src="js/home.js"></script>
 </body>
 </html>
